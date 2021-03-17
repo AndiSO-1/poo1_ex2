@@ -1,0 +1,6 @@
+development:
+  adapter: mysql2
+  host:
+  username:
+  password:
+  database: poo1_2020_shop

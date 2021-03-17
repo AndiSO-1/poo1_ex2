@@ -1,0 +1,89 @@
+D, [2021-03-10T10:53:45.012361 #5764] DEBUG -- :    (0.2ms)  SELECT 1
+D, [2021-03-10T10:53:45.061953 #5764] DEBUG -- :   Client Load (0.2ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T10:53:45.138678 #5764] DEBUG -- :   Product Load (0.3ms)  SELECT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T10:53:45.164286 #5764] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T10:53:45.167506 #5764] DEBUG -- :   OrderItem Load (0.2ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T10:53:45.186550 #5764] DEBUG -- :   Product Load (0.3ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T10:53:45.187498 #5764] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T10:53:45.188417 #5764] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T10:53:45.189655 #5764] DEBUG -- :   Category Load (0.3ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T11:17:26.584981 #17732] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T11:17:26.628492 #17732] DEBUG -- :   Client Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T11:17:26.986658 #17732] DEBUG -- :   Product Load (282.4ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T11:17:27.010379 #17732] DEBUG -- :   Category Load (0.3ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T11:17:27.013181 #17732] DEBUG -- :   OrderItem Load (0.2ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T11:17:27.037974 #17732] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T11:17:27.038861 #17732] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T11:17:27.039871 #17732] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T11:17:27.040738 #17732] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:00:58.688416 #18300] DEBUG -- :    (0.4ms)  SELECT 1
+D, [2021-03-10T16:00:58.939785 #18300] DEBUG -- :   Client Load (118.4ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T16:00:59.150890 #18300] DEBUG -- :   Product Load (25.0ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T16:00:59.225805 #18300] DEBUG -- :   Category Load (0.5ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:00:59.229289 #18300] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T16:00:59.250069 #18300] DEBUG -- :   Product Load (0.4ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:00:59.251242 #18300] DEBUG -- :   Product Load (0.4ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T16:00:59.252332 #18300] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:00:59.253274 #18300] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:08.967081 #26608] DEBUG -- :    (0.2ms)  SELECT 1
+D, [2021-03-10T16:02:09.018098 #26608] DEBUG -- :   Client Load (0.2ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T16:02:09.104214 #26608] DEBUG -- :   Product Load (0.2ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T16:02:09.140776 #26608] DEBUG -- :   Category Load (0.3ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:09.143642 #26608] DEBUG -- :   OrderItem Load (0.2ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T16:02:09.164954 #26608] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:09.165636 #26608] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T16:02:09.166370 #26608] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:09.167114 #26608] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:21.421469 #25960] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:02:21.476918 #25960] DEBUG -- :   Client Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T16:02:21.564538 #25960] DEBUG -- :   Product Load (0.3ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T16:02:21.589098 #25960] DEBUG -- :   Category Load (0.3ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:21.592272 #25960] DEBUG -- :   OrderItem Load (0.2ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T16:02:21.611442 #25960] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:21.612281 #25960] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T16:02:21.613083 #25960] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:21.616814 #25960] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:50.042578 #28640] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:02:50.100923 #28640] DEBUG -- :   Client Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T16:02:50.169550 #28640] DEBUG -- :   Product Load (0.3ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T16:02:50.193121 #28640] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:50.196018 #28640] DEBUG -- :   OrderItem Load (0.2ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T16:02:50.212364 #28640] DEBUG -- :   Product Load (0.3ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:50.213163 #28640] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T16:02:50.213986 #28640] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:50.217978 #28640] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:02:50.220491 #28640] DEBUG -- :   TRANSACTION (0.2ms)  BEGIN
+D, [2021-03-10T16:02:50.221168 #28640] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `created_at`, `updated_at`) VALUES (10, 10.0, '2021-03-10 15:02:50.218699', '2021-03-10 15:02:50.218699')
+D, [2021-03-10T16:02:50.287862 #28640] DEBUG -- :   TRANSACTION (66.3ms)  COMMIT
+D, [2021-03-10T16:05:07.940774 #27780] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:05:07.982723 #27780] DEBUG -- :   Client Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T16:05:08.058626 #27780] DEBUG -- :   Product Load (0.6ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T16:05:08.084173 #27780] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:05:08.087412 #27780] DEBUG -- :   OrderItem Load (0.3ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T16:05:08.104461 #27780] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:05:08.105123 #27780] DEBUG -- :   Product Load (0.1ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T16:05:08.105786 #27780] DEBUG -- :   Category Load (0.1ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:05:08.106412 #27780] DEBUG -- :   Category Load (0.1ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:05:34.648719 #11876] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:05:34.690705 #11876] DEBUG -- :   Client Load (0.3ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`firstname` = 'Jean' LIMIT 1
+D, [2021-03-10T16:05:34.763329 #11876] DEBUG -- :   Product Load (0.2ms)  SELECT DISTINCT `products`.* FROM `products` INNER JOIN `order_items` ON `products`.`id` = `order_items`.`product_id` INNER JOIN `orders` ON `order_items`.`order_id` = `orders`.`id` WHERE `orders`.`client_id` = 2 AND (products.price <= 0.2)
+D, [2021-03-10T16:05:34.785331 #11876] DEBUG -- :   Category Load (0.3ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:05:34.788209 #11876] DEBUG -- :   OrderItem Load (0.3ms)  SELECT `order_items`.* FROM `order_items` WHERE (quantity >= 10)
+D, [2021-03-10T16:05:34.805720 #11876] DEBUG -- :   Product Load (0.3ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:05:34.806645 #11876] DEBUG -- :   Product Load (0.2ms)  SELECT `products`.* FROM `products` WHERE `products`.`id` = 2 LIMIT 1
+D, [2021-03-10T16:05:34.807609 #11876] DEBUG -- :   Category Load (0.2ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:05:34.808540 #11876] DEBUG -- :   Category Load (0.3ms)  SELECT `categories`.* FROM `categories` WHERE `categories`.`id` = 1 LIMIT 1
+D, [2021-03-10T16:11:31.837202 #18384] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:11:40.871831 #19832] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:15:59.447882 #4468] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:16:08.856998 #8956] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:16:47.316770 #21284] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:24:05.223690 #26068] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:34:49.818204 #7876] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:54:42.674019 #2072] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:54:42.694480 #2072] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2021-03-10T16:54:53.116022 #16596] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T16:54:53.135403 #16596] DEBUG -- :   OrderItem Load (0.2ms)  SELECT `order_items`.* FROM `order_items` ORDER BY `order_items`.`id` ASC LIMIT 1
+D, [2021-03-10T17:01:14.477532 #22000] DEBUG -- :    (0.3ms)  SELECT 1
+D, [2021-03-10T17:01:14.499536 #22000] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders` ORDER BY `orders`.`id` ASC LIMIT 1
+D, [2021-03-10T17:01:14.568922 #22000] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
