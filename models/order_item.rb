@@ -20,8 +20,10 @@ class OrderItem < ActiveRecord::Base
     quantity * item_price
   end
 
+  protected
+
   # Rempli le prix de base avec celui du produit
-  protected def set_item_price
+  def set_item_price
     self.item_price ||= product.price
   end
 end
