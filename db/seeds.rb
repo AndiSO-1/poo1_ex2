@@ -1,7 +1,10 @@
 require_relative '../models'
 
-Client.new(firstname: "Marie", lastname: "Luis").save
-jean = Client.create(firstname: "Jean", lastname: "Luck")
+Individual.new(firstname: "Marie", lastname: "Luis").save
+jean = Individual.create(firstname: "Jean", lastname: "Luck")
+
+Company.new(name: "Food House").save
+Company.new(name: "Sports").save
 
 food = Category.create(name: "Nourriture", description: "Miam Miam")
 

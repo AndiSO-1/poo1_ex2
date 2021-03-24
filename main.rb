@@ -14,4 +14,8 @@ puts ActiveRecord::Base.connection.execute("SELECT 1")
 #puts OrderItem.create.errors[:product].any?
 
 # Test pour l'exercice 5
-puts Order.first.price
+#puts Order.first.price
+
+# Test pour l'exercice 6
+puts Individual.first.firstname
+puts Company.first.name
