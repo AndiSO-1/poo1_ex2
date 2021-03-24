@@ -17,5 +17,9 @@ puts ActiveRecord::Base.connection.execute("SELECT 1")
 #puts Order.first.price
 
 # Test pour l'exercice 6
-puts Individual.first.firstname
-puts Company.first.name
+#puts Individual.first.firstname
+#puts Company.first.name
+
+# Test pour l'exercice 7
+puts Supplier.first.name
+puts Supplier.first.categories.map(&:to_s)
