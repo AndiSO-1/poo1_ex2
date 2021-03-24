@@ -21,5 +21,9 @@ puts ActiveRecord::Base.connection.execute("SELECT 1")
 #puts Company.first.name
 
 # Test pour l'exercice 7
-puts Supplier.first.name
-puts Supplier.first.categories.map(&:to_s)
+#puts Supplier.first.name
+#puts Supplier.first.categories.map(&:to_s)
+
+# Test pour l'exercice 8
+#puts Client.find_by(firstname: 'Jean').comments.map(&:content)
+#puts Supplier.first.comments.map(&:content)
