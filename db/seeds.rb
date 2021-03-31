@@ -14,6 +14,7 @@ fBanane = Supplier.new(name: "F Banane")
 
 food = Category.create(name: "Nourriture", description: "Miam Miam")
 cloth = Category.create(name: "Habits", description: "Style")
+vehicle = Category.create(name: "Vehicules", description: "Vroom")
 
 choco = Product.create(name: "Chocolat", price: 2.00, category: food, supplier: multiF, comments: [comment1])
 banana = Product.create(name: "Banane", price: 0.10, category: food, supplier: fBanane)

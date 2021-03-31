@@ -34,3 +34,4 @@ puts ActiveRecord::Base.connection.execute("SELECT 1")
 #puts Order.all.map(&:price).max
 
 # 2.
+#puts Category.where.missing(:order_items)
