@@ -27,3 +27,10 @@ puts ActiveRecord::Base.connection.execute("SELECT 1")
 # Test pour l'exercice 8
 #puts Client.find_by(firstname: 'Jean').comments.map(&:content)
 #puts Supplier.first.comments.map(&:content)
+
+# Exercices 2
+
+# 1.
+#puts Order.all.map(&:price).max
+
+# 2.
