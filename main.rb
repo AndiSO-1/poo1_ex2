@@ -35,3 +35,6 @@ puts ActiveRecord::Base.connection.execute("SELECT 1")
 
 # 2.
 #puts Category.where.missing(:order_items)
+
+# 3.
+Client.where.missing(:orders).destroy_all
