@@ -31,10 +31,13 @@ puts ActiveRecord::Base.connection.execute("SELECT 1")
 # Exercices 2
 
 # 1.
-#puts Order.all.map(&:price).max
+#puts Order.most_expensive
 
 # 2.
-#puts Category.where.missing(:order_items)
+#puts Category.where.missing(:orders)
+#puts Order.all.map(&:categories)
 
 # 3.
-Client.where.missing(:orders).destroy_all
+#Client.where.missing(:orders).destroy_all
+
+# 4

@@ -18,6 +18,7 @@ vehicle = Category.create(name: "Vehicules", description: "Vroom")
 
 choco = Product.create(name: "Chocolat", price: 2.00, category: food, supplier: multiF, comments: [comment1])
 banana = Product.create(name: "Banane", price: 0.10, category: food, supplier: fBanane)
+coco = Product.create(name: "Coco", price: 0.50, category: food, supplier: fBanane)
 shirt = Product.create(name: "Short", price: 20.00, category: cloth, supplier: multiF)
 
 oi1 = OrderItem.new(product: choco, quantity: 10, item_price: choco.price)
